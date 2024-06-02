@@ -1,0 +1,30 @@
+PART 1
+
+HTTP = "Hypertext Transfer Protocol", essentually a set of rules for how the browser and servers should communicate with each others. 
+
+URL = "Uniform Resource Locator", an address for a specific resource, often webpages but not always. 
+
+DNS = "Domain Name System", takes hostnames and translates them to the corresponding IP address. 
+
+Query String = Extra, optional information that can be passed along to the server as part of a request.
+
+Two HTTP verbs are GET and POST. GET does not have any side effects to the server and is used to retreive information. POST does have side effects; an example would be saving a username to an account. 
+
+An HTTP request is what we're asking the server to do via the browser, by any method using HTTP protocol. 
+
+An HTTP response is what the server returns as a result of what was requested. 
+
+An HTTP header contains information regarding the request or response, such as the hostname, date and time the server thinks it is, the language content is displayed in, or the content type (these are not all mandatory).
+
+When typing a URL, like http://somesite.com/some/page.html into a browser, a request is sent to the server to retrieve the designated site--it is determined at the beginning to use http protocol, and what the hostname is (somesite.com/some/page). By default, it would connect to the site on port 80. First, it will need to be determined at which IP address the site is located--it will be determined by checking the computer cache, router, ISP, and DNS server in that order. Assuming an error is not encountered and the site IP is located, the server will send a response to the request back to the web browser, displaying the site defined by the URL; the content of the site would be included in the response body. The browser creates the DOM from the site's html content, and if necessaty, separate requests are sent to retrieve other included content (ex-pictures, 3rd party content like bootstrap or fonts, etc).
+
+PART 2
+
+-Response with 5 jokes 
+IP : 104.21.66.15 
+     172.67.198.173
+     (two answers given)
+
+PART 3
+
+-With post request, there is no longer a query string (somesite.com/page --> somesite.com/page/post when viewing what was posted)
